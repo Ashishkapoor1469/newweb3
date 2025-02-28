@@ -21,6 +21,7 @@ app.use(cors(corsOption));
 
 app.use(express.json()); // This is the middleware to parse the body of the request
 
+app.get('/',(req,res)=>{res.send({activeStatus:true,error:false})});
 app.use('/api/auth', authRouter); // This is the middleware to use the router
 app.use('/api/form', contactRoute); // This is the middleware to use the ContactRoute
 app.use('/api/data', serviceRoute);
