@@ -13,7 +13,7 @@ const Port = 5000;
 
 //cors policy
 const corsOption ={
-    origin: ["http://localhost:5173","https://eduviibe.netlify.app/"],
+    origin: ["http://localhost:5173","https://eduviibe.netlify.app"],
     method:"GET,POST,PUT,DELETE,PATCH,HEAD",
     credentials: true,
 };
