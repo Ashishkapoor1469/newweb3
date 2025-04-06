@@ -7,6 +7,7 @@ const serviceSchema = new Schema({
       price: { type:String, required:true },
       provider: { type:String, required:true },
       img: { type:String, required:true },
+      link: { type:String, required:true }
 });
 const Service = new model("Service", serviceSchema);
 
